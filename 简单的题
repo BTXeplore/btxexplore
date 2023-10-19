@@ -22,3 +22,35 @@ system("cls");
 
 	return 0;
 }
+
+
+
+
+登录系统
+#include<stdio.h>
+#include<stdlib.h>
+#include <Windows.h>
+
+#pragma warning(disable:4996)//规避scanf报错
+int main() {
+	char password[20] = { 0 };
+	
+	int i;
+	
+	for (i = 0; i < 3; i++){
+		printf("请输入");
+		scanf("%s",password);
+			if (strcmp(password,"abcdef")==0){
+				printf("登陆成功\n");
+				break;
+			
+		}
+		
+
+	}if (i == 3) {
+		printf("三次密码均输入错误，退出程序\n");
+	}
+
+
+	return 0;
+}
