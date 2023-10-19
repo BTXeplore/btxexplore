@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+#pragma warning(disable:4996)# pragma警告(禁用:4996)
+int main() {   Int main() {int main() {int main() {int main() {int main() {int main() {int main() {
+    float score;   浮动分数;
+    char grade;   char年级;
+    scanf("%f", &score);   scanf(“% f”,分数);
+    switch ((int)score / 10) {Switch ((int)score / 10) {switch ((int)score / 10) {switch ((int)score / 10) {switch ((int)score / 10) {switch ((int)score / 10) {switch ((int)score / 10) {switch ((int)score / 10) {switch ((int)score / 10) {
+    case 10:   例10:案例10:例10:
+    case 9:   例9:案例9： 例9：
+        grade = 'A';
+        break;   打破;
+    case 8:   例8:案例8： 例8：
+        grade = 'B';
+        break;   打破;
+    case 7:   例7:案例7： 例7：
+        grade = 'C';
+        break;   打破;
+    case 6:   例6:案例6:
+        grade = 'D';
+        break;   打破;
+    default:   默认值:
+        grade = 'E';
+    }
+    printf("grade:%c\n", grade);printf("评级:% c \ n”,年级);printf("评级:% c \ n”,年级),printf("评级:% c \ n”,年级);
+    return 0;   返回0;
+}
