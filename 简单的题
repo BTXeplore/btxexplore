@@ -1,0 +1,20 @@
+向中间汇聚
+#include<stdio.h>
+#pragma warning(disable:4996)//规避scanf报错
+int main() {
+	char arr1[] = "btxeplore";
+	char arr2[] = "*********";
+	int right, left;
+	right = strlen(arr1) - 1;
+	left = 0;
+	while (right >= left) {
+		arr2[right] = arr1[right];
+		arr2[left] = arr1[left];
+		printf("%s\n", arr2);
+		left++;
+		right--;
+	}
+
+
+	return 0;
+}
