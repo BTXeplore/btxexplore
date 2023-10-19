@@ -1,5 +1,7 @@
 向中间汇聚
 #include<stdio.h>
+#include<stdlib.h>
+#include <Windows.h>
 #pragma warning(disable:4996)//规避scanf报错
 int main() {
 	char arr1[] = "btxeplore";
@@ -13,6 +15,8 @@ int main() {
 		printf("%s\n", arr2);
 		left++;
 		right--;
+Sleep(1000);
+system("cls");
 	}
 
 
