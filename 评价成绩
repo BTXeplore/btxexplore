@@ -22,6 +22,6 @@ int main() {   Int main() {int main() {int main() {int main() {int main() {int m
     default:   
         grade = 'E';
     }
-    printf("grade:%c\n", grade);printf("评级:% c \ n”,年级);printf("评级:% c \ n”,年级),printf("评级:% c \ n”,年级);
-    return 0;   返回0;
+    printf("grade:%c\n", grade);
+    return 0;   ;
 }
