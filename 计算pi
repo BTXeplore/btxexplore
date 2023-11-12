@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+int main() {
+	int s = 1, n = 1;
+	double t = 1, pi = 0;
+	while (fabs(t) >= 1e-8) {
+		pi = pi + t;
+		n += 2;
+			s = -s;
+
+			t = s /  (double) n;
+	}
+	pi = pi * 4;
+	printf("pi=%f\n", pi);
+	
+ }
