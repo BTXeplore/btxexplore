@@ -1,0 +1,49 @@
+#include<stdio.h>
+#pragma warning(disable:4996)//规避scanf报错
+#include<stdlib.h>
+#include<time.h>
+
+void game() {
+    int guess = 0;
+    printf("请输入一个数字：");
+    scanf("%d", &guess);
+
+    int a = rand() % 100 + 1;
+
+    while (1) {
+        if (guess < a) {
+            printf("小了！\n");
+        }
+        else if (guess > a) {
+            printf("大了！\n");
+        }
+        else {
+            printf("恭喜你，猜对了！\n");
+            break;
+        }
+        scanf("%d", &guess);
+    }
+}
+
+int main() { // 错误：多余的分号
+    int input = 0;
+    srand((unsigned int)time(NULL));
+    scanf("%d", &input);
+
+    do {
+        switch (input) {
+        case 1:
+            game();
+            break;
+        case 0:
+            printf("退出游戏。\n");
+            break;
+        default:
+            printf("无效的输入。\n");
+            break;
+        }
+        scanf("%d", &input);
+    } while (input);
+
+    return 0;
+}
