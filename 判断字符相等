@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+#pragma warning(disable:4996)//规避scanf报错
+int main() {
+	char arr[20] = { 0 };
+	scanf("%s", arr);
+	if (strcmp(arr, "hello") == 0) {
+		printf("hi!");
+	}
+	else { printf("no hi!"); }
+	
+
+	return 0;
+
+
+}
