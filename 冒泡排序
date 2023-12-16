@@ -1,0 +1,55 @@
+void paixu(int arr[], int sz) {
+	
+	int d = 0;
+	for (int b = 0; b < sz-1;b++) {
+		for (int c = 0; c < sz - 1 - b; c++) {
+		
+			if (arr[c] < arr[c + 1]) {
+				d = arr[c];
+				arr[c] = arr[c + 1];
+				arr[c + 1] = d;
+			}
+
+
+	}
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+int main(){
+	int arr[10];
+	int sz = 0;
+	sz = sizeof(arr) / sizeof(arr[0]);
+	for (int a = 0; a < sz;a++) {
+		scanf("%d", &arr[a]);
+
+
+
+
+	}
+	paixu(arr, sz);
+	for (int z = 0; z < sz;z++) {
+		printf("%d ", arr[z]);
+
+
+
+	}
+
+
+	return 0;
+}
